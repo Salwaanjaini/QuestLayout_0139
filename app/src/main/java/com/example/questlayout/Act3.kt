@@ -27,23 +27,27 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun ActivitasPertama(modifier: Modifier = Modifier) {
+fun ActivitasPertama(
+    modifier: Modifier = Modifier
+) {
 
     Column(
         modifier = modifier
-            .padding(top = 100.dp)
-            .fillMaxSize(),
+            .fillMaxSize()
+            .padding(top = 100.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
 
+
         Text(
-            stringResource(id = R.string.prodi),
+            text = stringResource(R.string.prodi),
             fontSize = 35.sp,
             fontWeight = FontWeight.Bold
         )
 
+
         Text(
-            stringResource(id = R.string.univ),
+            text = stringResource(R.string.univ),
             fontSize = 22.sp
         )
 
@@ -51,35 +55,20 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
             modifier = Modifier.height(25.dp)
         )
 
+
         Card(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(all = 12.dp),
+                .padding(12.dp),
             colors = CardDefaults.cardColors(
-                containerColor = colorResource(R.color.card_0_bg)
+                containerColor = colorResource(
+                    R.color.card_0_bg
+                )
             )
         ) {
 
-            Row(
-                modifier = Modifier.fillMaxWidth()
-            ) {
 
-                val gambar = painterResource(R.drawable.logo_umy)
 
-                Image(
-                    painter = gambar,
-                    contentDescription = null,
-                    modifier = Modifier
-                        .size(100.dp)
-                        .padding(all = 5.dp)
-                )
-
-                Spacer(
-                    modifier = Modifier.width(30.dp)
-                )
-
-               
-            }
         }
     }
 }
