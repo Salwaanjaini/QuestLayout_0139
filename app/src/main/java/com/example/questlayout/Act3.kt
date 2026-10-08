@@ -122,8 +122,14 @@ fun ActivitasPertama(
             }
         }
 
-        
 
+        Box(
+            modifier = Modifier
+                .weight(1f)
+                .fillMaxWidth()
+        ) {
+
+          
         }
     }
 }
