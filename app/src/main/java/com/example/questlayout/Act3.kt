@@ -60,4 +60,22 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
             )
         ) {
 
-           
+            Row(
+                modifier = Modifier.fillMaxWidth()
+            ) {
+
+                val gambar = painterResource(R.drawable.logo_umy)
+
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(100.dp)
+                        .padding(all = 5.dp)
+                )
+
+               
+            }
+        }
+    }
+}
