@@ -89,8 +89,12 @@ fun ActivitasPertama(
                 )
 
 
+                Spacer(
+                    modifier = Modifier.width(30.dp)
+                )
 
-            )
+                
+
         }
     }
 }
